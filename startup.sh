@@ -13,6 +13,12 @@ if [ ! -d "$UE_PROJECT_ROOT/PathOfTitans/Binaries/Linux/" ]; then
     exit 1
 fi
 
+# Vérification de l'existence du fichier exécutable du serveur
+if [ ! -f "$UE_PROJECT_ROOT/PathOfTitans/Binaries/Linux/PathOfTitansServer-Linux-Shipping" ]; then
+    echo "Error: Server executable not found."
+    exit 1
+fi
+
 # Changement des permissions du serveur exécutable
 chmod +x "$UE_PROJECT_ROOT/PathOfTitans/Binaries/Linux/PathOfTitansServer-Linux-Shipping"
 
