@@ -3,27 +3,23 @@ echo "Path Of Titans Egg Star-X"
 echo "(c) Copyright 2024 - SwitchCompagnie"
 echo "Starting Server"
 
-# Récupération du répertoire actuel du script
-UE_TRUE_SCRIPT_NAME=$(realpath "$0")
-UE_PROJECT_ROOT=$(dirname "$UE_TRUE_SCRIPT_NAME")
-
 # Vérification de l'existence du répertoire du serveur
-if [ ! -d "$UE_PROJECT_ROOT/PathOfTitans/Binaries/Linux/" ]; then
+if [ ! -d "/mnt/server/PathOfTitans/Binaries/Linux/" ]; then
     echo "Error: Server directory not found."
     exit 1
 fi
 
 # Vérification de l'existence du fichier exécutable du serveur
-if [ ! -f "$UE_PROJECT_ROOT/PathOfTitans/Binaries/Linux/PathOfTitansServer-Linux-Shipping" ]; then
+if [ ! -f "/mnt/server/PathOfTitans/Binaries/Linux/PathOfTitansServer-Linux-Shipping" ]; then
     echo "Error: Server executable not found."
     exit 1
 fi
 
 # Changement des permissions du serveur exécutable
-chmod +x "$UE_PROJECT_ROOT/PathOfTitans/Binaries/Linux/PathOfTitansServer-Linux-Shipping"
+chmod +x "/mnt/server/PathOfTitans/Binaries/Linux/PathOfTitansServer-Linux-Shipping"
 
 # Démarrage du serveur avec les paramètres spécifiés
-"$UE_PROJECT_ROOT/PathOfTitans/Binaries/Linux/PathOfTitansServer-Linux-Shipping" PathOfTitans \
+"/mnt/server/PathOfTitans/Binaries/Linux/PathOfTitansServer-Linux-Shipping" PathOfTitans \
     -log \
     -Port=$SERVER_PORT \
     -BranchKey=$BETA_BRANCH \
