@@ -10,4 +10,4 @@ echo "--------------------------------------------------------------------------
 echo "-------------------------------------------------------------------------------------------------"
 echo "Starting POT Server"
 echo "-------------------------------------------------------------------------------------------------"
-./POT/PathOfTitansServer.sh ${SERVER_MAP} -log -ServerName=$ServerName -MaxPlayers=$MAX_PLAYERS -Port=$SERVER_PORT -BranchKey=$BETA_BRANCH -AuthToken=$AG_AUTH_TOKEN -ServerGUID=$SERVER_GUID -Database=$SERVER_DATABASE
+./POT/PathOfTitansServer.sh ${SERVER_MAP} -log -ServerName=$SERVER_NAME -MaxPlayers=$MAX_PLAYERS -Port=$SERVER_PORT -BranchKey=$BETA_BRANCH -AuthToken=$AG_AUTH_TOKEN -ServerGUID=$SERVER_GUID -Database=$SERVER_DATABASE
