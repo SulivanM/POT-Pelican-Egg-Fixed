@@ -1,7 +1,6 @@
 #!/bin/bash
 echo "Path Of Titans Egg Star-X"
 echo "(c) Copyright 2024 - SwitchCompagnie"
-echo "Starting Server"
 
 echo "-------------------------------------------------------------------------------------------------"
 echo "Checking Updates"
