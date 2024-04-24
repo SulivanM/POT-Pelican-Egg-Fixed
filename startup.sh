@@ -10,4 +10,4 @@ echo "--------------------------------------------------------------------------
 echo "-------------------------------------------------------------------------------------------------"
 echo "Starting POT Server"
 echo "-------------------------------------------------------------------------------------------------"
-./POT/PathOfTitansServer.sh -log -Port=$SERVER_PORT -BranchKey=$BETA_BRANCH -AuthToken=$AG_AUTH_TOKEN -ServerGUID=$SERVER_GUID -Database=Loca
+./POT/PathOfTitansServer.sh ${SERVER_MAP} -log -Port=$SERVER_PORT -BranchKey=$BETA_BRANCH -AuthToken=$AG_AUTH_TOKEN -ServerGUID=$SERVER_GUID -Database=Loca
