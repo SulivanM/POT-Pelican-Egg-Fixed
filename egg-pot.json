@@ -59,16 +59,6 @@
             "field_type": "text"
         },
         {
-            "name": "Server MAP",
-            "description": "The game map for the server.",
-            "env_variable": "SERVER_MAP",
-            "default_value": "Island",
-            "user_viewable": true,
-            "user_editable": true,
-            "rules": "required|string|max:30",
-            "field_type": "text"
-        },
-        {
             "name": "Max Player",
             "description": "This parameter is for server player limit.",
             "env_variable": "MAX_PLAYERS",
